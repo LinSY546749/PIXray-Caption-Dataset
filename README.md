@@ -1,1 +1,2 @@
-# PIXray-Caption-Dataset
+# Open-Vocabulary Prohibited Item Detection for Real-World X-ray Security Inspection: A Benchmark and Interference Resistant Network
+To support the research on the task of open-vocabulary prohibited item detection, we contribute the first X-ray security inspection OVOD evaluation benchmark, named PIXray Caption dataset, which contains 15 common categories and 5,046 image-caption pair annotations. We have released example image-caption pairs from the PIXray Caption dataset. Full dataset will be released upon acceptance.
