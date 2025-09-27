@@ -5,7 +5,7 @@ Download the entire PIXray Caption dataset from Google Drive [![Download Dataset
 ## Data Preparation
 Prepare data following [MMDetection](https://github.com/open-mmlab/mmdetection). 
 ### Data Split
-Obtain the json files for OVOD task from [GoogleDrive](https://drive.google.com/drive/folders/1rPMt7gGr8stSZLIl1SMfu6M8Z2AvcWkW?usp=sharing) and put them under `data/pixray/ovod`. The data structure looks like:
+Obtain the json files for OVOD task from [here](https://drive.google.com/drive/folders/1rPMt7gGr8stSZLIl1SMfu6M8Z2AvcWkW?usp=sharing) and put them under `data/pixray/ovod`. The data structure looks like:
 ```
 data/
 ├── pixray
