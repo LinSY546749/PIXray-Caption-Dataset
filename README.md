@@ -2,8 +2,22 @@
 To support the research on the task of open-vocabulary prohibited item detection, we contribute the first X-ray security inspection OVOD evaluation benchmark, named PIXray Caption dataset, which contains 15 common categories and 5,046 image-caption pair annotations. The complete dataset is updated.
 ## Download
 Download the entire PIXray Caption dataset from Google Drive [![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue)](https://drive.google.com/file/d/1tkjVBSUP1AfpwgqDPLIPDss3kNfBVvZ4/view?usp=sharing)
-
-Prepare data following [MMDetection](https://github.com/open-mmlab/mmdetection). Obtain the json files for OVOD task from [GoogleDrive](https://drive.google.com/drive/folders/1rPMt7gGr8stSZLIl1SMfu6M8Z2AvcWkW?usp=sharing) and put them under data/coco/wusize. The data structure looks like:
+## Data Preparation
+Prepare data following [MMDetection](https://github.com/open-mmlab/mmdetection). Obtain the json files for OVOD task from [GoogleDrive](https://drive.google.com/drive/folders/1rPMt7gGr8stSZLIl1SMfu6M8Z2AvcWkW?usp=sharing) and put them under `data/coco/wusize`. The data structure looks like:
+```
+data/
+├── pixray
+│   ├── annotations
+│   │   ├── pixray_train.json
+│   │   ├── pixray_test.json
+│   ├── ovod
+│   │   ├── pixray_train_base.json
+│   │   ├── pixray_val_base.json
+│   │   ├── pixray_val_novel.json
+│   │   ├── pixray_captions_train_allcaps.json
+│   ├── train
+│   ├── test
+```
 ## Citation
 If you find this dataset useful for your research, please cite:
 ```bibtex
