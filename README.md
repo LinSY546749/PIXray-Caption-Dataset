@@ -3,13 +3,18 @@ To support the research on the task of open-vocabulary prohibited item detection
 ## Download
 Download the entire PIXray Caption dataset from Google Drive [![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue)](https://drive.google.com/file/d/1tkjVBSUP1AfpwgqDPLIPDss3kNfBVvZ4/view?usp=sharing)
 ## Data Preparation
-Prepare data following [MMDetection](https://github.com/open-mmlab/mmdetection). Obtain the json files for OVOD task from [GoogleDrive](https://drive.google.com/drive/folders/1rPMt7gGr8stSZLIl1SMfu6M8Z2AvcWkW?usp=sharing) and put them under `data/coco/wusize`. The data structure looks like:
+Prepare data following [MMDetection](https://github.com/open-mmlab/mmdetection). 
+### Data Split
+Obtain the json files for OVOD task from [GoogleDrive](https://drive.google.com/drive/folders/1rPMt7gGr8stSZLIl1SMfu6M8Z2AvcWkW?usp=sharing) and put them under `data/pixray/ovod`. The data structure looks like:
 ```
 data/
 ├── pixray
 │   ├── annotations
 │   │   ├── pixray_train.json
 │   │   ├── pixray_test.json
+│   ├── captions
+│   │   ├── pixray_caption_train.json
+│   │   ├── pixray_caption_test.json
 │   ├── ovod
 │   │   ├── pixray_train_base.json
 │   │   ├── pixray_val_base.json
@@ -18,6 +23,11 @@ data/
 │   ├── train
 │   ├── test
 ```
+The json file `pixray_captions_train_allcaps.json` for caption supervision is obtained following [Detic](https://github.com/facebookresearch/Detic/blob/main/datasets/README.md).
+### Class Embeddings
+Obtain the class embeddings [here](https://drive.google.com/file/d/1g6rwkd6_m6SDtyoDiN5SEEScJ1trUH0n/view?usp=sharing).
+### CLIP Checkpoints
+We use CLIP's ViT-B-32 model for the implementation of our method. Obtain the state_dict of the model from [here](https://drive.google.com/file/d/1Pp9PZW3FOqO1YZiV6wT54MMcs1hcLjZP/view?usp=sharing).
 ## Citation
 If you find this dataset useful for your research, please cite:
 ```bibtex
